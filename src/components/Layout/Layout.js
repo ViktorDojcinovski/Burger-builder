@@ -2,11 +2,13 @@ import React from 'react';
 
 import AuxComp from '../../hoc/AuxComp';
 
-const layout = () => {
+const layout = (props) => {
     return(
         <AuxComp>
-            <p>Some text</p>
-            <p>Some other text</p>
+            <div>Toolbar, SideDrawer, Backdrop</div>
+            <main>
+                { props.children }
+            </main>
         </AuxComp>
     )
 }
